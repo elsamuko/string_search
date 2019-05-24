@@ -9,13 +9,13 @@ Mac OS with Clang version 10.0.0 (clang-1000.11.45.5)
       knuth_morris_pratt_search : 302 us
 ~~~~
 
-linux with GNU C++ version 7.4.0
+linux with GNU C++ version 9.1.0
 ~~~~
                         memmem :  37 us
-                  string::find :  37 us <
+                  string::find :  38 us <
                         strstr :  52 us
-   boyer_moore_horspool_search :  53 us
-     knuth_morris_pratt_search : 117 us
+   boyer_moore_horspool_search :  55 us
+     knuth_morris_pratt_search : 137 us
 ~~~~
 
 Win32 with Microsoft Visual C++ version 1920
