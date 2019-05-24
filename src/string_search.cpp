@@ -4,6 +4,7 @@
 #include "boost/algorithm/searching/boyer_moore_horspool.hpp"
 #include "boost/algorithm/searching/knuth_morris_pratt.hpp"
 #include "boost/timer/timer.hpp"
+#include "boost/predef.h"
 
 boost::int_least64_t timed1000( const std::string& name, const std::function<void()>& func ) {
     boost::timer::cpu_timer stopwatch;
@@ -25,6 +26,8 @@ int main() {
     size_t pos = 0;
     void* ptr = nullptr;
     std::string::iterator it;
+
+    printf( "%s with %s\n", BOOST_PLATFORM, BOOST_COMPILER );
 
 #if !WIN32
     boost::int_least64_t t_memmem = timed1000( "memmem", [&text, &term, &ptr] {
