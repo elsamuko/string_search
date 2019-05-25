@@ -21,8 +21,11 @@ boost::int_least64_t timed1000( const std::string& name, const std::function<voi
 }
 
 int main() {
-    std::string text = "You can get there from here, but why on earth would you want to?";
-    std::string term = "earth";
+
+    // http://www.cs.cornell.edu/Info/People/fcc/humor/warnings.html
+    std::string text = "READ THIS BEFORE OPENING PACKAGE: According to Certain Suggested Versions of the Grand Unified Theory, the Primary Particles Constituting this Product May Decay to Nothingness Within the Next Four Hundred Million Years.";
+    std::string term = "Primary Particles";
+
     size_t pos = 0;
     void* ptr = nullptr;
     std::string::iterator it;
