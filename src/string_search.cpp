@@ -50,9 +50,9 @@ material under section 10.
     for( std::string term : { "Termination", "t4tb7qfSFb2" } ) {
 
         if( term == "Termination" ) {
-            printf( "Search for an existing substring with" );
+            printf( "Search for an existing substring with " );
         } else {
-            printf( "Search for an non-existing substring with" );
+            printf( "Search for an non-existing substring with " );
         }
 
         for( std::string text : { small, full } ) {
