@@ -3,6 +3,7 @@ DESTDIR=$${MAIN_DIR}
 SRC_DIR  =../src
 INCLUDEPATH += $${SRC_DIR}
 
+HEADERS += $${SRC_DIR}/stopwatch.hpp
 SOURCES += $${SRC_DIR}/string_search.cpp
 
 # via https://mischasan.wordpress.com/2011/07/16/convergence-sse2-and-strstr/
